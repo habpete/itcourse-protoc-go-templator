@@ -21,7 +21,7 @@ func generateFile(gen *protogen.Plugin, file *protogen.File) {
 }
 
 func appendPackageName(g *protogen.GeneratedFile, packageName protogen.GoPackageName) {
-	g.P("package ", file.GoPackageName)
+	g.P("package ", packageName)
 }
 
 func appendImports(g *protogen.GeneratedFile) {
